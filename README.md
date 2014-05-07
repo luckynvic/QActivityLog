@@ -21,8 +21,7 @@ Copy all extension files to your extension folder.
                         // table name
                          'logTableName'=>'trn_activity_log',
                
-                       // level a
-                       nd category that will used in log message
+                       // level and category that will used in log message
                        'levels'=>'action',
                        'categories'=>array('Backend'),
 
@@ -54,6 +53,8 @@ Define filter in controller that you want to log user activity.
       );
     }
 ```
+
+Since QLogFilter is extends of CFilter, you can use as contoller filter. Please refer to [documentation](http://www.yiiframework.com/doc/guide/1.1/en/basics.controller#filter).
 
 **Warning!** logCategory and logLevel should be same as in your config
 
