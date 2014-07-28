@@ -1,6 +1,6 @@
 QActivityLog
 ============
-Yii Extension to log user that open controller action.
+Yii Extension to log user that opened controller action.
 
 # Installation
 Copy all extension files to your extension folder.
@@ -54,7 +54,7 @@ Define filter in controller that you want to log user activity.
     }
 ```
 
-Since QLogFilter is extends of CFilter, you can use as contoller filter. Please refer to [documentation](http://www.yiiframework.com/doc/guide/1.1/en/basics.controller#filter).
+Since QLogFilter was extends of CFilter, you can used extension same as controller filter. Please refer to [documentation](http://www.yiiframework.com/doc/guide/1.1/en/basics.controller#filter).
 
 **Warning!** logCategory and logLevel should be same as in your config
 
