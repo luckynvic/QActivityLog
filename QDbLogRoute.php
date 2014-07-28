@@ -17,8 +17,8 @@ class QDbLogRoute extends CDbLogRoute
         'category'=>'varchar(128)',
         'logtime'=>'datetime',
         'message'=>'text',
-        'user_id'=>'vharchar(30)',
-        'ip_address'=>'vharchar(30)',
+        'user_id'=>'varchar(30)',
+        'ip_address'=>'varchar(30)',
         'user_agent'=>'varchar(255)',
         'request_url'=>'varchar(255)',
     ));
@@ -31,7 +31,7 @@ class QDbLogRoute extends CDbLogRoute
 	    $command=$this->getDbConnection()->createCommand();
 	    $request=Yii::app()->request;
 	    $id=Yii::app()->user->id;
-
+	    	    
 	    foreach($logs as $log)
 	    {
 	    	$message=($this->collectMessage?$log[0]:'');
